@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 13:24:19 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/08 17:16:18 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/09 17:36:23 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int		ft_isalpha(int c);
 int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
+char	*ft_itoa(int n);
 void	*ft_memchr(const void *block, int src, size_t size);
 int		ft_memcmp(const void *pt1, const void *pt2, size_t size);
 void	*ft_memcpy(void *dest, const void *src, size_t size);
