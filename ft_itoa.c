@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 16:20:30 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/09 17:02:11 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/09 17:06:49 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,18 +38,19 @@ char	*ft_itoa(int n)
 	res = (char *) malloc(sizeof(char) * (lennbr(n) + 1));
 	if (n == -2147483648)
 	{
-		res = "-2147483648";
+		res = "-2147483648\0";
 		return (res);
 	}
 	if (n < 0)
 	{
 		n = n * -1;
-		res[0] = "-";
+		res[0] = 45;
 		i = 1;
 	}
 	if (n < 10)
 		res[i] = n + 48;
-	else if ()
+	//else if ()
+	res[lennbr(n)] = '\0';
 	return (res);
 }
 
@@ -57,6 +58,6 @@ int	main()
 {
 	char	*res;
 	
-	res = ft_itoa(2);
+	res = ft_itoa(-2);
 	printf("%s", res);
 }
