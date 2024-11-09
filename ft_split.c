@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 08:17:31 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/09 15:16:15 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/09 15:24:36 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,10 @@ char	**ft_split(char const *s, char c)
 	{
 		while (s[i] == c)
 			i++;
-		res[x] = ft_substr(s, i, lenword(s, c, i));
+		if (s[i] != '\0')
+			res[x] = ft_substr(s, i, lenword(s, c, i));
+		else
+			break;
 		if (res[x] == NULL)
 		{
 			while (x < 0)
