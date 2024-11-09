@@ -6,8 +6,15 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 16:20:30 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/09 16:21:46 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/09 16:34:50 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+char	*ft_itoa(int n)
+{
+	char	*res;
+	
+	res = (char *) malloc(sizeof(char) *) 
+}
