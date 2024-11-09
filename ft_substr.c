@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 09:30:04 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/09 15:07:00 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/09 15:54:53 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (start >= ft_strlen(s))
 		len = 0;
 	if (len > ft_strlen(s) - start)
-		len = ft_strlen(s) - start;	
+		len = ft_strlen(s) - start;
 	res = (char *)malloc(sizeof(char) * (len + 1));
 	if (res == NULL)
 		return (NULL);

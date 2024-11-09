@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 08:17:31 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/09 15:52:24 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/09 15:53:57 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ size_t	lenword(char const *s, char c, size_t index)
 	size_t	i;
 
 	i = 0;
-	while (s[index + i] && s[index + i] !=c)
+	while (s[index + i] && s[index + i] != c)
 		i++;
 	return (i);
 }
@@ -43,7 +43,7 @@ size_t	lenword(char const *s, char c, size_t index)
 void	*ft_free(char **res)
 {
 	size_t	x;
-	
+
 	x = 0;
 	while (res[x])
 	{
@@ -72,9 +72,9 @@ char	**ft_split(char const *s, char c)
 		if (s[i] != '\0')
 			res[x] = ft_substr(s, i, lenword(s, c, i));
 		else
-			break;
+			break ;
 		if (res[x] == NULL)
-			return(ft_free(res));
+			return (ft_free(res));
 		x++;
 		while (s[i] != c && i < ft_strlen(s))
 			i++;
