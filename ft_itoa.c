@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 16:20:30 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/09 17:18:20 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/09 17:23:22 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,10 @@ char	*ft_itoa(int n)
 {
 	char	*res;
 	size_t	i;
+	size_t	len;
 	
 	i = 0;
+	len = 
 	res = (char *) malloc(sizeof(char) * (lennbr(n) + 1));
 	if (n == -2147483648)
 	{
@@ -50,16 +52,16 @@ char	*ft_itoa(int n)
 		res[0] = 45;
 		i++;
 	}
-	if (n < 10)
-		res[i] = n + 48;
-	else if (n > 9)
+	if (n > 9)
 	{
 		while (n > 9)
 		{
-			res[lennbr(n)] = n % 10;
+			res[lennbr(n) - 1] = n % 10 + 48;
 			n = n / 10;
 		}
 	}
+	if (n < 10)
+		res[lennbr(n) - 1] = n + 48;
 	res[lennbr(n) + 1] = '\0';
 	return (res);
 }
