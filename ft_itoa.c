@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 16:20:30 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/09 16:53:05 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/09 16:58:11 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,26 @@ static size_t	lennbr(n)
 	return (i);
 }
 
-*/char	*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	char	*res;
+	size_t	i;
 	
-	res = (char *) malloc(sizeof(char) * (lennbr(n) + 1)); 
+	i = 0;
+	res = (char *) malloc(sizeof(char) * (lennbr(n) + 1));
+	if (n < 0)
+	{
+		n = n 
+	}
+	if (n < 10)
+		res[] = n + 48;
+	return (res);
 }
 
 int	main()
 {
-	printf("%zu", lennbr(0));
+	char	*res;
+	
+	res = ft_itoa(2);
+	printf("%s", res);
 }
