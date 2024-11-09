@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 08:17:31 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/09 15:47:21 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/09 15:52:24 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ size_t	countwords(char const *s, char c)
 {
 	size_t	i;
 	size_t	count;
-	
+
 	i = 0;
 	count = 0;
 	if (s[i] != c && s[i] != '\0')
@@ -33,21 +33,25 @@ size_t	countwords(char const *s, char c)
 size_t	lenword(char const *s, char c, size_t index)
 {
 	size_t	i;
-	
+
 	i = 0;
 	while (s[index + i] && s[index + i] !=c)
 		i++;
 	return (i);
 }
 
-void	*ft_free(char *s, size_t x)
+void	*ft_free(char **res)
 {
-		while (x < 0)
-		{
-			free(res[x]);
-			x--;
-		}
-		free(res);
+	size_t	x;
+	
+	x = 0;
+	while (res[x])
+	{
+		free(res[x]);
+		x++;
+	}
+	free(res);
+	return (NULL);
 }
 
 char	**ft_split(char const *s, char c)
@@ -70,7 +74,7 @@ char	**ft_split(char const *s, char c)
 		else
 			break;
 		if (res[x] == NULL)
-			return(ft_free(res[x], x));
+			return(ft_free(res));
 		x++;
 		while (s[i] != c && i < ft_strlen(s))
 			i++;
