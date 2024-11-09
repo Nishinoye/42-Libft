@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 16:20:30 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/09 17:06:49 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/09 17:13:18 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,12 @@ static size_t	lennbr(n)
 	
 	i = 0;
 	if (n < 0)
+	{
 		n = n * -1;
-	if (n >= 0)
-		i = 1;
+		i++;
+	}
+	if (n >= 0 && n < 10)
+		i++;;
 	while (n > 9)
 	{
 		i++;
@@ -50,7 +53,7 @@ char	*ft_itoa(int n)
 	if (n < 10)
 		res[i] = n + 48;
 	//else if ()
-	res[lennbr(n)] = '\0';
+	res[lennbr(n) + 1] = '\0';
 	return (res);
 }
 
