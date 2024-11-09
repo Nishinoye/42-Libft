@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 08:17:31 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/09 15:24:36 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/09 15:47:21 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,16 @@ size_t	lenword(char const *s, char c, size_t index)
 	return (i);
 }
 
+void	*ft_free(char *s, size_t x)
+{
+		while (x < 0)
+		{
+			free(res[x]);
+			x--;
+		}
+		free(res);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	size_t	i;
@@ -60,15 +70,7 @@ char	**ft_split(char const *s, char c)
 		else
 			break;
 		if (res[x] == NULL)
-		{
-			while (x < 0)
-			{
-				free(res[x]);
-				x--;
-			}
-			free(res);
-			return (NULL);
-		}
+			return(ft_free(res[x], x));
 		x++;
 		while (s[i] != c && i < ft_strlen(s))
 			i++;
