@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 08:17:31 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/09 14:25:06 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/09 14:31:22 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,15 @@ char	**ft_split(char const *s, char c)
 			i++;
 		res[x] = (char *) malloc(sizeof(char) * (lenword(s, c, i) + 1));
 		if (res == NULL)
-		{}
+		{
+			while (x < 0)
+			{
+				free(res[x]);
+				x--;
+			}
+			free(res);
+			return (NULL);
+		}
 		res[x] = ft_substr(s, i, lenword);
 		x++;
 		while (s[i] != c && i < ft_strlen(s))
