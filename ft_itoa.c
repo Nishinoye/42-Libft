@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 16:20:30 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/09 17:23:22 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/09 17:28:02 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ static size_t	lennbr(n)
 		i++;
 	}
 	if (n >= 0 && n < 10)
-		i++;;
+		i++;;;;;;;;;;
 	while (n > 9)
 	{
 		i++;
@@ -39,8 +39,8 @@ char	*ft_itoa(int n)
 	size_t	len;
 	
 	i = 0;
-	len = 
-	res = (char *) malloc(sizeof(char) * (lennbr(n) + 1));
+	len = lennbr(n);
+	res = (char *) malloc(sizeof(char) * (len + 1));
 	if (n == -2147483648)
 	{
 		res = "-2147483648\0";
@@ -52,17 +52,14 @@ char	*ft_itoa(int n)
 		res[0] = 45;
 		i++;
 	}
-	if (n > 9)
+	while (n > 9)
 	{
-		while (n > 9)
-		{
-			res[lennbr(n) - 1] = n % 10 + 48;
-			n = n / 10;
-		}
+		res[lennbr(n)] = n % 10 + 48;
+		n = n / 10;
+		printf("%s\n", res);
 	}
-	if (n < 10)
-		res[lennbr(n) - 1] = n + 48;
-	res[lennbr(n) + 1] = '\0';
+	res[lennbr(n)] = n + 48;
+	res[len] = '\0';
 	return (res);
 }
 
@@ -70,6 +67,6 @@ int	main()
 {
 	char	*res;
 	
-	res = ft_itoa(19);
+	res = ft_itoa(-19986);
 	printf("%s", res);
 }
