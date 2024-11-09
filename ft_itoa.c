@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 16:20:30 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/09 17:13:18 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/09 17:18:20 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,11 +48,18 @@ char	*ft_itoa(int n)
 	{
 		n = n * -1;
 		res[0] = 45;
-		i = 1;
+		i++;
 	}
 	if (n < 10)
 		res[i] = n + 48;
-	//else if ()
+	else if (n > 9)
+	{
+		while (n > 9)
+		{
+			res[lennbr(n)] = n % 10;
+			n = n / 10;
+		}
+	}
 	res[lennbr(n) + 1] = '\0';
 	return (res);
 }
@@ -61,6 +68,6 @@ int	main()
 {
 	char	*res;
 	
-	res = ft_itoa(-2);
+	res = ft_itoa(19);
 	printf("%s", res);
 }
