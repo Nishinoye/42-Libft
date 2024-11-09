@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 16:20:30 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/09 17:38:40 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/09 17:42:51 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,10 @@ char	*ft_itoa(int n)
 	return (res);
 }
 
-int	main()
+/*int	main()
 {
-	char	
-}
+	char	*res;
+
+	res = ft_itoa(-10000);
+	printf("%s", res);
+}*/
