@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 09:11:13 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/10 13:53:47 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/10 14:06:32 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,12 +39,22 @@ char	*ft_itoa(int n)
 	char	*res;
 	int		len;
 	
+	if (n == INT_MIN)
 	len = nblen(n);
 	res = (char *) ft_calloc(len + 1, sizeof(char));
 	if (!res)
 		return (NULL);
 	if (n < 0)
-		n *= -1;
+	{	n *= -1;
+		res[0] = 45;
+	}
+	while (n >  9)
+	{
+		len --;
+		res[len] = n % 10 + 48;
+		n /= 10;
+	}
+	res[len - 1] = n + 48;
 	return (res);
 }
 
@@ -54,11 +64,16 @@ int	main()
 	
 	res = ft_itoa(0);
 	printf("%s\n", res);
-	printf("%d\n", nblen(5));
-	printf("%d\n", nblen(-5));
-	printf("%d\n", nblen(0));
-	printf("%d\n", nblen(555));
-	printf("%d\n", nblen(-555));
-	printf("%d\n", nblen(INT_MIN));
-	printf("%d\n", nblen(INT_MAX));
+	res = ft_itoa(5);
+	printf("%s\n", res);
+	res = ft_itoa(-5);
+	printf("%s\n", res);
+	res = ft_itoa(55555);
+	printf("%s\n", res);
+	res = ft_itoa(-55555);
+	printf("%s\n", res);
+	res = ft_itoa(INT_MAX);
+	printf("%s\n", res);
+	res = ft_itoa(INT_MIN);
+	printf("%s\n", res);
 }
