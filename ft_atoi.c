@@ -6,9 +6,11 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 09:10:56 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/08 14:18:28 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/10 12:22:40 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//Passe une chaine de caractere str en int res
 
 #include "libft.h"
 

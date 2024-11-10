@@ -6,11 +6,11 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 09:30:04 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/10 12:13:44 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/10 12:21:32 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//
+//Cree la nouvelle chaine res a partir de la position start de la chaine s
 
 #include "libft.h"
 
