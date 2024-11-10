@@ -5,67 +5,45 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/09 16:20:30 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/09 17:42:51 by tedcarpi         ###   ########.fr       */
+/*   Created: 2024/11/10 09:11:13 by tedcarpi          #+#    #+#             */
+/*   Updated: 2024/11/10 09:19:30 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	lennbr(int n)
+static int	nblen(int n)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
+	if (n == 0)
+		return (1);
 	if (n < 0)
 	{
-		n = n * -1;
 		i++;
+		n *= -1;
 	}
 	while (n > 9)
 	{
 		i++;
-		n = n / 10;
+		n /= 10;
 	}
-	if (n >= 0 && n < 10)
-		i++;
-	return (i);
+	return (i + 1);
 }
 
-char	*ft_itoa(int n)
+/*char	*ft_itoa(int n)
 {
-	char	*res;
-	size_t	i;
-	size_t	len;
-
-	i = 0;
-	len = lennbr(n);
-	res = (char *) malloc(sizeof(char) * (len + 1));
-	if (n == -2147483648)
-	{
-		res = "-2147483648\0";
-		return (res);
-	}
-	if (n < 0)
-	{
-		n = n * -1;
-		res[0] = 45;
-		i++;
-	}
-	while (n > 9)
-	{
-		res[lennbr(n)] = n % 10 + 48;
-		n = n / 10;
-	}
-	res[lennbr(n)] = n + 48;
-	res[len] = '\0';
-	return (res);
-}
-
-/*int	main()
-{
-	char	*res;
-
-	res = ft_itoa(-10000);
-	printf("%s", res);
+	
 }*/
+
+int	main()
+{
+	printf("%d\n", nblen(5));
+	printf("%d\n", nblen(-5));
+	printf("%d\n", nblen(0));
+	printf("%d\n", nblen(555));
+	printf("%d\n", nblen(-555));
+	printf("%d\n", nblen(INT_MIN));
+	printf("%d\n", nblen(INT_MAX));
+}
