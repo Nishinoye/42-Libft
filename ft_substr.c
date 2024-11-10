@@ -6,9 +6,11 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 09:30:04 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/10 11:53:31 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/10 12:13:44 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//
 
 #include "libft.h"
 
@@ -27,11 +29,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	res = (char *)ft_calloc(len + 1, sizeof(char));
 	if (res == NULL)
 		return (NULL);
-	while ((size_t)i < len && s[start])
-	{
-		res[i] = s[start];
-		start++;
-		i++;
-	}
+	ft_memcpy(res, s + start, len);
 	return (res);
 }
