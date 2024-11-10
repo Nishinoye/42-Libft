@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 15:35:28 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/10 10:59:41 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/10 11:00:58 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t size)
 	i = 0;
 	ptr1 = (unsigned char *)src;
 	ptr2 = (unsigned char *)dest;
-	while (i < size && ptr2[i])
+	while (i < size)
 	{
 		ptr2[i] = ptr1[i];
 		i++;
