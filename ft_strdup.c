@@ -6,9 +6,11 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 09:04:40 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/10 09:43:48 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/10 10:42:30 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//Duplique la chaine src dans une nouvelle chaine res AVEC LE \0
 
 #include "libft.h"
 
