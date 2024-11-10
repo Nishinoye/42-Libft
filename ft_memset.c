@@ -6,11 +6,11 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 14:26:42 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/10 10:29:31 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/10 10:32:04 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//
+//Remplir les octets de array avec value jusqu'a size
 
 #include "libft.h"
 
