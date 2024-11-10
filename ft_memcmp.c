@@ -6,11 +6,11 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 08:58:23 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/10 10:02:42 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/10 10:27:47 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//
+//Compare les octets pt1 et pt2 jusqu'a size
 
 #include "libft.h"
 

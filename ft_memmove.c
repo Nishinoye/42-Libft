@@ -6,9 +6,11 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 12:28:20 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/07 11:48:33 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/10 10:29:26 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//Copie les octets de src dans dest EN EVITANT LE CHEVAUCHEMENT
 
 #include "libft.h"
 
