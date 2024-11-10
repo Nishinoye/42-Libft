@@ -6,9 +6,11 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 11:45:30 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/07 11:22:16 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/10 09:57:19 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//Check si c est une lettre
 
 #include "libft.h"
 

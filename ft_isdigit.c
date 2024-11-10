@@ -6,9 +6,11 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 12:01:40 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/07 11:22:18 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/10 09:57:55 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//Check si c est un chiffre
 
 #include "libft.h"
 
