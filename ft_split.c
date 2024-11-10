@@ -6,11 +6,12 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 08:17:31 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/10 10:35:58 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/10 10:51:28 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Coupe la chaine de caractere s en la splitant dans un nouveau tableau de chaine res
+//Coupe la chaine de caractere s en la splitant 
+//dans un nouveau tableau de chaine res
 
 #include "libft.h"
 

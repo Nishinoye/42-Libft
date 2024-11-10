@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 10:39:59 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/10 10:49:47 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/10 10:59:46 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,11 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	size_t	i;
 
-	i = 0;
+	i = ft_strlen(src);
 	if (size > 0)
 	{
-		while (i < size - 1 && src[i])
-		{
-			dest[i] = src[i];
-			i++;
-		}
+		ft_memcpy(dest, src, i);
 		dest[i] = '\0';
 	}
-	return (ft_strlen(src));
+	return (i);
 }
