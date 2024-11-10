@@ -6,11 +6,11 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 08:48:05 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/10 09:58:19 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/10 10:02:27 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//
+//Cherche la premiere occurence de src dans block DANS LA MEMOIRE
 
 #include "libft.h"
 
