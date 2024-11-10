@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 09:11:13 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/10 09:24:41 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/10 09:31:19 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ static int	nblen(int n)
 	return (i + 1);
 }
 
-char	*ft_itoa(int n)
+/*char	*ft_itoa(int n)
 {
 	char	*res;
 	int		len;
@@ -45,7 +45,7 @@ char	*ft_itoa(int n)
 		return (NULL);
 	if (res == 0)
 		
-}
+}*/
 
 int	main()
 {
