@@ -6,9 +6,11 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 10:47:41 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/08 15:22:43 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/10 11:27:03 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//Concatene src dans dest jusqu'a size
 
 #include "libft.h"
 
