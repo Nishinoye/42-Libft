@@ -6,9 +6,11 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 14:42:02 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/07 13:12:16 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/10 11:39:51 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//Cherche c dans str en partant de la fin
 
 #include "libft.h"
 
