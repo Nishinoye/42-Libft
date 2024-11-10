@@ -6,9 +6,11 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 14:41:13 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/07 09:59:01 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/10 09:47:41 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// Mettre tout les octets a 0 jusqu'a la taille n
 
 #include "libft.h"
 
