@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 09:11:13 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/10 09:19:30 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/10 09:24:41 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ static int	nblen(int n)
 	i = 0;
 	if (n == 0)
 		return (1);
+	if (n == INT_MIN)
+		return (11);
 	if (n < 0)
 	{
 		i++;
@@ -32,10 +34,18 @@ static int	nblen(int n)
 	return (i + 1);
 }
 
-/*char	*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
+	char	*res;
+	int		len;
 	
-}*/
+	len = nblen(n);
+	res = (char *) malloc(sizeof(char) * (len + 1));
+	if (!res)
+		return (NULL);
+	if (res == 0)
+		
+}
 
 int	main()
 {
