@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 09:30:04 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/10 11:49:45 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/10 11:53:31 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	res = (char *)ft_calloc(len + 1, sizeof(char));
 	if (res == NULL)
 		return (NULL);
-	res[start] = ft_memcpy(res, s, len);
+	while ((size_t)i < len && s[start])
+	{
+		res[i] = s[start];
+		start++;
+		i++;
+	}
 	return (res);
 }

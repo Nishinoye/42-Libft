@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 14:27:33 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/10 09:55:20 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/10 11:52:50 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,6 @@ void	*ft_calloc(size_t count, size_t type)
 	ptr = malloc(type * count);
 	if (ptr == NULL)
 		return (NULL);
-	ft_memset(ptr, 0, type * count);
+	ft_bzero(ptr, type * count);
 	return (ptr);
 }
