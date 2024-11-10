@@ -6,11 +6,11 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 10:15:58 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/10 11:39:58 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/10 11:42:19 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//
+//Soustrait le set donne de la chaine s1 dans la nouvelle chaine res
 
 #include "libft.h"
 

@@ -6,13 +6,12 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 15:28:56 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/10 11:39:25 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/10 11:43:33 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //Cherche ENTIEREMENT s2 dans s1 et renvoi 
 //l'adresse de l'occurence de s2 dans s1
-
 
 #include "libft.h"
 
