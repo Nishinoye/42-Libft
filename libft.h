@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 13:24:19 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/13 17:29:08 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/13 18:05:02 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,9 @@
 typedef struct s_list
 {
 	void			*content;
-	struct s_list	*next;
+	struct s_list	*right;
+	struct s_list	*left;
+	
 }			t_list;
 
 int		ft_atoi(const char *str);
