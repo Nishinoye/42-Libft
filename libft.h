@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 13:24:19 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/13 15:23:24 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/13 17:23:59 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 
 typedef struct s_list
 {
-	void			*content;
+	int			content;
 	struct s_list	*next;
 }			t_list;
 
