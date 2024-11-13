@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 11:55:47 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/13 12:03:29 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/13 12:06:08 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,12 @@ int	ft_lstsize(t_list *lst)
 	int	i;
 
 	i = 0;
-	while (lst->next != NULL)
+	if (lst == NULL)
+		return (0);
+	while (lst != NULL)
 	{
 		i++;
-		lst++;
+		lst = lst->next;
 	}
 	return (i);
 }
