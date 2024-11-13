@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 13:24:19 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/10 16:04:22 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/13 08:41:56 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@
 # include <stdio.h>
 # include <limits.h>
 
-typedef struct	s_list
+typedef	struct	s_list
 {
-void	*content;
-struct s_list	*next;
+void			*content;
+struct	s_list	*next;
 } t_list;
 
 int		ft_atoi(const char *str);
