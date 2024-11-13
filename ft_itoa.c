@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 09:11:13 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/13 14:49:53 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/13 14:56:27 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ char	*ft_itoa(int n)
 	if (n == INT_MIN)
 		return (ft_strdup("-2147483648"));
 	len = nblen(n);
-	
 	res = (char *) ft_calloc(len + 1, sizeof(char));
 	if (!res)
 		return (NULL);
