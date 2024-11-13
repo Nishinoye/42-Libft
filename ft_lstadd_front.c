@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 09:26:47 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/13 09:45:48 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/13 09:55:53 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,5 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	*lst = ft_lstnew(new);
+	
 }
