@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 16:52:37 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/14 17:00:48 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/14 17:16:17 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,11 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
-	del((*lst));
-	free((*lst));
-	(*lst) = NULL;
+	t_list	n;
+	
+	while (!*lst)
+	{
+		n->next = (*lst->next;
+		
+	}
 }
