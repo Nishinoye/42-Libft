@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 17:48:57 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/14 18:05:49 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/14 18:12:01 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ t_list *ft_lstmap(t_list *lst, void *(*f)(void *),void (*del)(void *))
 
 	while (lst)
 	{
+		new = f(lst->content);
+		lst = lst->next;
 		
 	}
 	
