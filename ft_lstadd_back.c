@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 15:22:26 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/13 18:02:15 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/14 15:27:26 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,11 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 
 	if (!lst || !new)
 		return ;
+	if (*lst == NULL)
+	{
+		*lst = new;
+		return ;
+	}
 	ptr = ft_lstlast((*lst));
-	*lst = ptr;
-	(*lst)->next = new;
-	new->next = NULL;
+	ptr->next = new;
 }
