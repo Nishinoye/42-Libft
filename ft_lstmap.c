@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/14 17:41:01 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/14 17:48:02 by tedcarpi         ###   ########.fr       */
+/*   Created: 2024/11/14 17:48:57 by tedcarpi          #+#    #+#             */
+/*   Updated: 2024/11/14 17:53:34 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,13 @@
 
 #include "libft.h"
 
-void	ft_lstiter(t_list *lst, void (*f)(void *))
+t_list *ft_lstmap(t_list *lst, void *(*f)(void *),void (*del)(void *))
 {
+	t_list	*new;
+
 	while (lst)
 	{
-		f(lst->content);
-		lst = lst->next;
+		
 	}
+	
 }
