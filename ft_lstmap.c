@@ -6,7 +6,7 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 17:48:57 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/15 16:34:01 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/15 16:36:01 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		{
 			ft_lstclear(&new, del);
 			ft_lstclear(&res, del);
-			ft_lstclear(&swap, del);		
+			ft_lstclear(&swap, del);
 		}
 		ft_lstadd_back(&res, new);
 		swap = swap->next;
