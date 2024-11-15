@@ -6,11 +6,11 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 14:51:55 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/14 14:56:31 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/15 17:19:57 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//
+//Place le pointeur a la position du dernier noeud
 
 #include "libft.h"
 

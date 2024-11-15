@@ -6,11 +6,11 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 15:22:26 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/14 15:27:26 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/15 17:16:07 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//
+//Ajoute un noeud a la derniere position
 
 #include "libft.h"
 

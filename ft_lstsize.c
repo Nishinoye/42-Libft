@@ -6,11 +6,11 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 11:55:47 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/13 17:37:48 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/15 17:23:11 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//
+//Retourne le nombre de noeud dans la liste lst
 
 #include "libft.h"
 

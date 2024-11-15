@@ -6,11 +6,11 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 09:11:13 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/15 17:13:56 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/15 17:15:47 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Converti 
+//Converti les int en caracter ascii
 
 #include "libft.h"
 

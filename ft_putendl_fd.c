@@ -6,11 +6,12 @@
 /*   By: tedcarpi <tedcarpi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 15:32:34 by tedcarpi          #+#    #+#             */
-/*   Updated: 2024/11/10 15:45:20 by tedcarpi         ###   ########.fr       */
+/*   Updated: 2024/11/15 17:24:58 by tedcarpi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//
+//Rajoute un \n a la suite de la chaine de caractere 
+//avec fd comme descripteur de fichier
 
 #include "libft.h"
 
